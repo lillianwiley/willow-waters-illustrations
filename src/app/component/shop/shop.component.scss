@@ -1,0 +1,28 @@
+
+.card-top{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background: blanchedalmond;
+    background-clip: padding-box;
+    border: 1px solid cornflowerblue;
+    border-radius: .25rem;
+}
+.item {
+    margin: 0px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    text-align: center;
+    width: 20%;
+    height: 40%;
+}
+
+.item img {
+    width: 80px;
+}
+
+.item a:hover{
+    color: lightgrey;
+}

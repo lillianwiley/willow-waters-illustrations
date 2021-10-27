@@ -1,0 +1,22 @@
+<mat-nav-list>
+    <a mat-list-item routerLink="/home" (click)="onSidenavClose()">
+        <span class="nav-caption">Home</span>
+    </a>
+    <mat-list-item [matMenuTriggerFor]="menu">
+        <span matline class="nav-caption">Shop</span>
+    </mat-list-item>
+    <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)=onSidenavClose()>Custom</button>
+        <button mat-menu-item (click)=onSidenavClose()>Charcoal</button><button mat-menu-item (click)=onSidenavClose()>Floral & Cacti</button><button mat-menu-item (click)=onSidenavClose()>Wedding Suites</button>
+        <button mat-menu-item (click)=onSidenavClose()>Shop All</button>
+    </mat-menu>
+    <a mat-list-item routerLink="/cart" (click)="onSidenavClose()">
+        <span class="nav-caption">Cart</span>
+    </a>
+    <a mat-list-item routerLink="/about" (click)="onSidenavClose()">
+        <span class="nav-caption">About Me</span>
+    </a>
+    <a mat-list-item routerLink="/contact" (click)="onSidenavClose()">
+        <span class="nav-caption">Contact</span>
+    </a>   
+</mat-nav-list>

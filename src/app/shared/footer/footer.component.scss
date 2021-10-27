@@ -1,8 +1,14 @@
-div {
+.footer {
     background-color: #F4F6F6;
-    padding: 20px;
-    margin: 0;
-    position: absolute;
-    width: 95.3%;
-    bottom: 0;
+    padding: 24px;
+    flex-shrink: 0;
+
+    >div {
+        max-width: 290px;
+        width: 290px;
+    }
+
+    p {
+        font-size: 13px;
+    }
 }

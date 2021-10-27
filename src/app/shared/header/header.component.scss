@@ -4,38 +4,63 @@
     src: local("Brushes"), url(../../../assets/fonts/Brushes.ttf) format("truetype");
 }
 
-.header {
-    background-color: #FADBD8;
-    padding: 20px;
-    margin: 0;
+@font-face {
+    font-family: "Breadly";
+    src: local("Breadly"), url(../../../assets/fonts/BreadleySansRegular-MVyEB.ttf) format("truetype");
 }
 
-div {
-    position: relative;
+@font-face {
+    font-family: "Monument";
+    src: local("Monument"), url(../../../assets/fonts/MonumentValley12-X55o.otf) format("truetype");
 }
 
-li {
-    list-style: none;
+a {
+    text-decoration: none;
+    color: #474748;
+    font-family: Monument;
+    padding: 5px;
+}    
+ 
+a:hover, a:active, h1{
+    color: lightgray;
 }
 
 h1 {
-    font-family: "Brushes";
-    font-size: 40px;
-    text-align: center;
+    text-decoration: none;
+    color: #474748;
+    font-family: Brushes;
+    font-size: 3em;
+}
+ 
+.navigation-items{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-mat-sidenav-container {
-    //this is what is making the body go below the footer. Need to find solution
-    height: 100%;
-    
+.mat-toolbar-row, .mat-toolbar-single-row {
+    display: flex;
+    box-sizing: border-box;
+    padding: 0 16px;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    white-space: nowrap;
 }
 
-mat-sidenav, mat-sidenav-content {
-    padding: 16px;
+ul {
+  display: flex;
+  justify-content: space-evenly;
 }
-
-mat-sidenav {
-    background-color: #FADBD8;
-    width: 250px;
-    text-align: center;
+ 
+mat-toolbar{
+    height: 80px;
+    background-image:#FFFF;
+}
+ 
+@media(max-width: 959px){
+    mat-toolbar{
+        border-radius: 0px;
+    }
 }

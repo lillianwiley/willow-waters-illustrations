@@ -1,4 +1,17 @@
-<app-header></app-header>
-<h1>{{title}}</h1>
-<app-footer></app-footer>
-<router-outlet></router-outlet>
+<div fxLayout="row wrap" fxLayoutAlign="center center" class="page-container">
+      <div fxFlex="80%" fxFlex.lt-md="100%" class="flex-wrapper">
+        <mat-sidenav-container>
+          <mat-sidenav #sidenav role="navigation">
+            <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+          </mat-sidenav>
+          <mat-sidenav-content>
+            <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+            <main class="page-content">
+              <router-outlet></router-outlet>
+            </main>
+            
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+        <app-footer></app-footer>
+      </div>
+</div>
