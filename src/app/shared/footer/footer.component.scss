@@ -1,7 +1,12 @@
 .footer {
-    background-color: #F4F6F6;
+    background-color: #e5e1e9;
     padding: 24px;
     flex-shrink: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+
 
     >div {
         max-width: 290px;
