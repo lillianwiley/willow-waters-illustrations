@@ -6,9 +6,11 @@
         <span matline class="nav-caption">Shop</span>
     </mat-list-item>
     <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)=onSidenavClose()>Custom</button>
-        <button mat-menu-item (click)=onSidenavClose()>Charcoal</button><button mat-menu-item (click)=onSidenavClose()>Floral & Cacti</button><button mat-menu-item (click)=onSidenavClose()>Wedding Suites</button>
-        <button mat-menu-item (click)=onSidenavClose()>Shop All</button>
+        <button mat-menu-item routerLink="/shop" (click)=onSidenavClose()>Custom</button>
+        <button mat-menu-item routerLink="/shop" (click)=onSidenavClose()>Charcoal</button>
+        <button mat-menu-item routerLink="/shop" (click)=onSidenavClose()>Floral & Cacti</button>
+        <button mat-menu-item routerLink="/shop" (click)=onSidenavClose()>Wedding Suites</button>
+        <button mat-menu-item routerLink="/shop" (click)=onSidenavClose()>Shop All</button>
     </mat-menu>
     <a mat-list-item routerLink="/cart" (click)="onSidenavClose()">
         <span class="nav-caption">Cart</span>
