@@ -1,8 +1,19 @@
-div {
-    background-color: #F4F6F6;
-    padding: 20px;
-    margin: 0;
-    position: absolute;
-    width: 95.3%;
-    bottom: 0;
+.footer {
+    background-color: #e5e1e9;
+    padding: 24px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+
+
+
+    >div {
+        max-width: 290px;
+        width: 290px;
+    }
+
+    p {
+        font-size: 13px;
+    }
 }

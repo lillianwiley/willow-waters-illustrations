@@ -1,50 +1,30 @@
-<div class="header">
-    <h1>
-        WILLOW WATERS ILLUSTRATIONS    
-    </h1>
-</div>
+<header>
 <div>
-<mat-sidenav-container class="example-container">
-    <mat-sidenav #sidenav mode="over" [(opened)]="opened">
-      Menu
-      <span>
-          <button (click)="sidenav.close()">
-              <mat-icon>close</mat-icon>
-          </button>
-      </span>
-      <li>
-        <span>
-            <a routerLink='/about'>
-            About</a></span>
-      </li>
-      <li>
-        <span>
-            <a routerLink='/shop'>
-            Shop</a></span>
-      </li>
-      <li>
-        <span>
-            <a routerLink='/gallery'>
-            Gallery</a></span>
-      </li>
-      <li>
-        <span>
-            <a routerLink='/contact'>
-            Contact Me</a></span>
-      </li> 
-      <li>
-        <span>
-            <a routerLink='/home'>
-            Home</a></span>
-      </li> 
-           
-    </mat-sidenav>
-  
-    <mat-sidenav-content>
-        <button (click)="sidenav.toggle()">
-            <mat-icon>menu</mat-icon>
-        </button>
-    </mat-sidenav-content>
-  </mat-sidenav-container>
+<mat-toolbar fxHide.xs>
+  <div fxHide.gt-xs>
+      <button mat-icon-button (click)="onToggleSidenav()">
+          <mat-icon>menu</mat-icon>
+      </button>
+  </div>
+  <div fxHide.xs>
+      <h1 routerLink="/home">Willow Waters</h1>
+  </div>
+  <div fxHide.xs>
+      <ul class="navigation-items">
+          <li>
+              <a routerLink="/shop">SHOP</a>
+          </li>
+          <li>
+              <a routerLink="/about">ABOUT</a>
+          </li>
+          <li>
+            <a routerLink="/contact">CONTACT</a>
+          </li>
+          <li>
+          <a routerLink="/cart">CART</a>
+          </li>
+      </ul>
+  </div>
+</mat-toolbar>
 </div>
-  <router-outlet></router-outlet>
+</header>

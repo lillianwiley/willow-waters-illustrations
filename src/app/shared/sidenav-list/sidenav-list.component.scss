@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "Monument";
+    src: local("Monument"), url(../../../assets/fonts/MonumentValley12-X55o.otf) format("truetype");
+}
+
+a, .nav-caption {
+    text-decoration: none;
+    color: #474748;
+    font-family: Monument;
+    font-weight: bolder;
+}
+
+
+a:hover, a:active, mat-menu {
+    color: lightgrey;
+}
+
+button {
+    font-family: Monument;
+}
+
+.nav-caption {
+    display: inline-block;
+    padding-left: 6px;
+}
